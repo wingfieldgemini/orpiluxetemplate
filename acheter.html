@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Biens d'Exception — Orpi Luxe</title>
+  <meta name="description" content="Découvrez notre sélection exclusive de propriétés de prestige sur la Côte d'Azur. Villas, penthouses, appartements de luxe à Nice, Cannes, Monaco et Saint-Jean-Cap-Ferrat.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-to-content">Aller au contenu principal</a>
+
+  <!-- ========================================================================
+       NAVIGATION
+       ======================================================================== -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/orpi_logo_C6A962_transparent.png" alt="Orpi Biens d'Exception — Immobilier de prestige Côte d'Azur" class="nav-logo-img">
+        <span class="nav-logo-subtitle">BIENS D'EXCEPTION</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="acheter.html" class="nav__link active">Nos&nbsp;Biens</a>
+        <a href="vendre.html" class="nav__link">Vendre</a>
+        <a href="gestion-locative.html" class="nav__link">Gestion</a>
+        <a href="le-groupe.html" class="nav__link">Le&nbsp;Groupe</a>
+      </div>
+
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--outline">Contact</a>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+    <div class="nav__mobile" aria-hidden="true">
+    <a href="index.html">Accueil</a>
+    <a href="acheter.html">Nos Biens</a>
+    <a href="vendre.html">Vendre</a>
+    <a href="gestion-locative.html">Gestion</a>
+    <a href="le-groupe.html">Le Groupe</a>
+    <a href="contact.html" class="btn btn--primary">Contact</a>
+  </div>
+
+  <!-- ========================================================================
+       HERO — SHORT
+       ======================================================================== -->
+  <section class="hero hero--short">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?w=1600&h=900&fit=crop&q=80" alt="Vue aérienne de la côte méditerranéenne et villas de prestige">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content" data-reveal>
+      <h1 class="hero__title">Nos biens d'exception</h1>
+      <p class="hero__subtitle">Une sélection exclusive de propriétés de prestige sur la Côte d'Azur</p>
+      <span class="hero__badge">42 biens disponibles</span>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FILTER BAR
+       ======================================================================== -->
+  <div class="filter-bar">
+    <div class="container">
+      <select class="form-select" data-filter="type">
+        <option value="">Type de bien</option>
+        <option value="appartement">Appartement</option>
+        <option value="maison">Maison</option>
+        <option value="villa">Villa</option>
+        <option value="penthouse">Penthouse</option>
+        <option value="terrain">Terrain</option>
+      </select>
+
+      <select class="form-select" data-filter="location">
+        <option value="">Localisation</option>
+        <option value="nice">Nice</option>
+        <option value="cannes">Cannes</option>
+        <option value="antibes">Antibes</option>
+        <option value="monaco">Monaco</option>
+        <option value="saint-jean-cap-ferrat">Saint-Jean-Cap-Ferrat</option>
+        <option value="eze">Èze</option>
+        <option value="beaulieu-sur-mer">Beaulieu-sur-Mer</option>
+        <option value="villefranche-sur-mer">Villefranche-sur-Mer</option>
+      </select>
+
+      <select class="form-select" data-filter="rooms">
+        <option value="">Pièces</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6+">6+</option>
+      </select>
+
+      <select class="form-select" data-filter="budget">
+        <option value="">Budget</option>
+        <option value="0-500000">Jusqu'à 500&nbsp;000&nbsp;&euro;</option>
+        <option value="500000-1000000">500&nbsp;000 - 1&nbsp;000&nbsp;000&nbsp;&euro;</option>
+        <option value="1000000-2000000">1 - 2&nbsp;000&nbsp;000&nbsp;&euro;</option>
+        <option value="2000000-5000000">2 - 5&nbsp;000&nbsp;000&nbsp;&euro;</option>
+        <option value="5000000+">5&nbsp;000&nbsp;000&nbsp;&euro;+</option>
+      </select>
+
+      <select class="form-select" data-sort>
+        <option value="recent">Plus récent</option>
+        <option value="price-desc">Prix décroissant</option>
+        <option value="price-asc">Prix croissant</option>
+        <option value="surface">Surface</option>
+      </select>
+
+      <span class="filter-bar__count"><strong>12</strong> biens trouvés</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       PROPERTY GRID
+       ======================================================================== -->
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="property-grid">
+
+          <!-- 1. Villa Contemporaine -->
+          <article class="property-card" data-type="villa" data-location="saint-jean-cap-ferrat" data-rooms="6" data-price="4850000" data-surface="320" data-reveal>
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop&q=80" alt="Villa Contemporaine à Saint-Jean-Cap-Ferrat">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--exclusive">Exclusivité</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">4&nbsp;850&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Villa Contemporaine</h3>
+              <p class="property-card__location">Saint-Jean-Cap-Ferrat</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  320&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  6 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  4 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Sophie Martin</p>
+            </div>
+          </article>
+
+          <!-- 2. Penthouse Vue Mer -->
+          <article class="property-card" data-type="penthouse" data-location="cannes" data-rooms="4" data-price="2180000" data-surface="185" data-reveal data-reveal-delay="100">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80" alt="Penthouse Vue Mer à Cannes Croisette">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--new">Nouveau</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">2&nbsp;180&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Penthouse Vue Mer</h3>
+              <p class="property-card__location">Cannes Croisette</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  185&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  4 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  2 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Marc Fontaine</p>
+            </div>
+          </article>
+
+          <!-- 3. Appartement Prestige -->
+          <article class="property-card" data-type="appartement" data-location="nice" data-rooms="4" data-price="1290000" data-surface="120" data-reveal data-reveal-delay="200">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&q=80" alt="Appartement Prestige à Nice Carré d'Or">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--favorite">Coup de c&oelig;ur</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">1&nbsp;290&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Appartement Prestige</h3>
+              <p class="property-card__location">Nice Carré d'Or</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  120&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  4 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  2 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Claire Beaumont</p>
+            </div>
+          </article>
+
+          <!-- 4. Villa Belle Époque -->
+          <article class="property-card" data-type="villa" data-location="villefranche-sur-mer" data-rooms="7" data-price="3750000" data-surface="280" data-reveal>
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&q=80" alt="Villa Belle Époque à Villefranche-sur-Mer">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--exclusive">Exclusivité</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">3&nbsp;750&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Villa Belle Époque</h3>
+              <p class="property-card__location">Villefranche-sur-Mer</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  280&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  7 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  3 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Sophie Martin</p>
+            </div>
+          </article>
+
+          <!-- 5. Duplex avec Terrasse -->
+          <article class="property-card" data-type="appartement" data-location="beaulieu-sur-mer" data-rooms="5" data-price="1850000" data-surface="155" data-reveal data-reveal-delay="100">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&q=80" alt="Duplex avec Terrasse à Beaulieu-sur-Mer">
+              <div class="property-card__image-overlay"></div>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">1&nbsp;850&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Duplex avec Terrasse</h3>
+              <p class="property-card__location">Beaulieu-sur-Mer</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  155&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  5 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  2 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Marc Fontaine</p>
+            </div>
+          </article>
+
+          <!-- 6. Villa Pieds dans l'Eau -->
+          <article class="property-card" data-type="villa" data-location="eze" data-rooms="8" data-price="7200000" data-surface="450" data-reveal data-reveal-delay="200">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80" alt="Villa Pieds dans l'Eau à Èze">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--exclusive">Exclusivité</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">7&nbsp;200&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Villa Pieds dans l'Eau</h3>
+              <p class="property-card__location">Èze</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  450&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  8 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  5 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Thomas Rivière</p>
+            </div>
+          </article>
+
+          <!-- 7. Appartement Croisette -->
+          <article class="property-card" data-type="appartement" data-location="cannes" data-rooms="3" data-price="890000" data-surface="85" data-reveal>
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&q=80" alt="Appartement Croisette à Cannes">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--new">Nouveau</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">890&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Appartement Croisette</h3>
+              <p class="property-card__location">Cannes</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  85&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  3 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  1 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Claire Beaumont</p>
+            </div>
+          </article>
+
+          <!-- 8. Penthouse Panoramique -->
+          <article class="property-card" data-type="penthouse" data-location="nice" data-rooms="5" data-price="3450000" data-surface="240" data-reveal data-reveal-delay="100">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80" alt="Penthouse Panoramique à Nice">
+              <div class="property-card__image-overlay"></div>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">3&nbsp;450&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Penthouse Panoramique</h3>
+              <p class="property-card__location">Nice</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  240&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  5 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  3 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Marc Fontaine</p>
+            </div>
+          </article>
+
+          <!-- 9. Maison de Maître -->
+          <article class="property-card" data-type="maison" data-location="antibes" data-rooms="8" data-price="2650000" data-surface="310" data-reveal data-reveal-delay="200">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop&q=80" alt="Maison de Maître à Antibes">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--favorite">Coup de c&oelig;ur</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">2&nbsp;650&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Maison de Maître</h3>
+              <p class="property-card__location">Antibes</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  310&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  8 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  4 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Thomas Rivière</p>
+            </div>
+          </article>
+
+          <!-- 10. Villa Moderne -->
+          <article class="property-card" data-type="villa" data-location="monaco" data-rooms="6" data-price="8500000" data-surface="380" data-reveal>
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&h=600&fit=crop&q=80" alt="Villa Moderne à Monaco">
+              <div class="property-card__image-overlay"></div>
+              <span class="property-card__badge property-card__badge--exclusive">Exclusivité</span>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">8&nbsp;500&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Villa Moderne</h3>
+              <p class="property-card__location">Monaco</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  380&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  6 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  4 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Sophie Martin</p>
+            </div>
+          </article>
+
+          <!-- 11. Appartement Standing -->
+          <article class="property-card" data-type="appartement" data-location="nice" data-rooms="3" data-price="675000" data-surface="72" data-reveal data-reveal-delay="100">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&h=600&fit=crop&q=80" alt="Appartement Standing à Nice">
+              <div class="property-card__image-overlay"></div>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">675&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Appartement Standing</h3>
+              <p class="property-card__location">Nice</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  72&nbsp;m²
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  3 pièces
+                </span>
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4"/><path d="M4 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                  1 SDB
+                </span>
+              </div>
+              <p class="property-card__agent">Claire Beaumont</p>
+            </div>
+          </article>
+
+          <!-- 12. Terrain Constructible -->
+          <article class="property-card" data-type="terrain" data-location="saint-jean-cap-ferrat" data-rooms="0" data-price="4200000" data-surface="1200" data-reveal data-reveal-delay="200">
+            <div class="property-card__image">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop&q=80" alt="Terrain Constructible à Saint-Jean-Cap-Ferrat">
+              <div class="property-card__image-overlay"></div>
+            </div>
+            <div class="property-card__body">
+              <p class="property-card__price">4&nbsp;200&nbsp;000&nbsp;&euro;</p>
+              <h3 class="property-card__title">Terrain Constructible</h3>
+              <p class="property-card__location">Saint-Jean-Cap-Ferrat</p>
+              <div class="property-card__details">
+                <span class="property-card__detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+                  1&nbsp;200&nbsp;m²
+                </span>
+              </div>
+              <p class="property-card__agent">Thomas Rivière</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CTA SECTION
+         ======================================================================== -->
+    <section class="cta-section" data-reveal>
+      <div class="cta-section__bg">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&h=600&fit=crop&q=80" alt="Propriété de prestige">
+      </div>
+      <div class="cta-section__overlay"></div>
+      <div class="cta-section__content">
+        <h2>Vous souhaitez vendre&nbsp;?</h2>
+        <p>Bénéficiez d'une estimation gratuite et confidentielle</p>
+        <div class="hero__buttons">
+          <a href="vendre.html" class="btn btn--primary btn--large">Estimer mon bien</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <img src="assets/images/orpi_logo_C6A962_transparent.png" alt="Orpi Biens d'Exception" class="footer-logo-img">
+          </a>
+          <p>Votre partenaire de confiance pour l'immobilier de prestige sur la Côte d'Azur. Une expertise reconnue, un service sur mesure.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="acheter.html">Acheter</a></li>
+            <li><a href="vendre.html">Vendre</a></li>
+            <li><a href="#">Louer</a></li>
+            <li><a href="#">Gestion locative</a></li>
+            <li><a href="#">Estimation gratuite</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Le groupe</h4>
+          <ul>
+            <li><a href="le-groupe.html">Notre histoire</a></li>
+            <li><a href="#">Notre équipe</a></li>
+            <li><a href="#">Nos agences</a></li>
+            <li><a href="#">Recrutement</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Contact</h4>
+          <ul>
+            <li>12 Promenade des Anglais</li>
+            <li>06000 Nice</li>
+            <li><a href="tel:+33493000000">04 93 00 00 00</a></li>
+            <li><a href="mailto:contact@orpiluxe.fr">contact@orpiluxe.fr</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Orpi Luxe. Tous droits réservés.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+</body>
+</html>

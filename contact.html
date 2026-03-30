@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Orpi Luxe, votre agence immobilière de prestige sur la Côte d'Azur. Nos experts sont à votre disposition pour tous vos projets immobiliers.">
+  <title>Contact — Orpi Luxe</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Orpi Luxe",
+    "description": "Agence immobilière de prestige sur la Côte d'Azur",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12, avenue des Fleurs",
+      "addressLocality": "Nice",
+      "postalCode": "06000",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33493000000",
+    "openingHours": ["Mo-Fr 09:00-19:00", "Sa 10:00-12:30, 14:00-18:00"],
+    "url": "https://orpi-luxe.fr"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-to-content">Aller au contenu</a>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/orpi_logo_C6A962_transparent.png" alt="Orpi Biens d'Exception — Immobilier de prestige Côte d'Azur" class="nav-logo-img">
+        <span class="nav-logo-subtitle">BIENS D'EXCEPTION</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="acheter.html" class="nav__link">Nos Biens</a>
+        <a href="vendre.html" class="nav__link">Vendre</a>
+        <a href="gestion-locative.html" class="nav__link">Gestion</a>
+        <a href="le-groupe.html" class="nav__link">Le Groupe</a>
+      </div>
+
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--outline">Contact</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+    <div class="nav__mobile" aria-hidden="true">
+    <a href="index.html">Accueil</a>
+    <a href="acheter.html">Nos Biens</a>
+    <a href="vendre.html">Vendre</a>
+    <a href="gestion-locative.html">Gestion</a>
+    <a href="le-groupe.html">Le Groupe</a>
+    <a href="contact.html" class="btn btn--primary">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero hero--short">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&h=900&fit=crop&q=80" alt="Port de Monaco au crépuscule avec yachts de luxe">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content" data-reveal>
+        <h1 class="hero__title">Contactez-nous</h1>
+        <p class="hero__subtitle">Notre équipe est à votre disposition pour tous vos projets immobiliers</p>
+      </div>
+    </section>
+
+    <!-- 2. Contact Section -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="grid grid--2" data-reveal>
+
+          <!-- Left: Contact Form -->
+          <div>
+            <h3 style="margin-bottom: var(--space-lg);">Envoyez-nous un message</h3>
+            <form data-validate>
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Votre prénom" required>
+                <span class="form-error">Veuillez saisir votre prénom</span>
+              </div>
+
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" class="form-input" placeholder="Votre nom" required>
+                <span class="form-error">Veuillez saisir votre nom</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Votre adresse email" required>
+                <span class="form-error">Veuillez saisir une adresse email valide</span>
+              </div>
+
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="Votre numéro de téléphone">
+                <span class="form-error">Veuillez saisir un numéro valide</span>
+              </div>
+
+              <div class="form-group">
+                <label for="objet">Objet</label>
+                <select id="objet" name="objet" class="form-select" required>
+                  <option value="" disabled selected>Sélectionnez un objet</option>
+                  <option value="achat">Achat</option>
+                  <option value="vente">Vente</option>
+                  <option value="location">Location</option>
+                  <option value="gestion-locative">Gestion locative</option>
+                  <option value="estimation">Estimation gratuite</option>
+                  <option value="autre">Autre</option>
+                </select>
+                <span class="form-error">Veuillez sélectionner un objet</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Votre message" required></textarea>
+                <span class="form-error">Veuillez saisir votre message</span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--wide">Envoyer</button>
+            </form>
+          </div>
+
+          <!-- Right: Contact Info Cards -->
+          <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+
+            <!-- Phone -->
+            <div class="contact-card" data-reveal>
+              <div class="contact-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <h4>Téléphone</h4>
+              <p>04&nbsp;93&nbsp;00&nbsp;00&nbsp;00</p>
+              <p>Du lundi au vendredi, 9h-19h</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card" data-reveal>
+              <div class="contact-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h4>Email</h4>
+              <p>contact@orpi-luxe.fr</p>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-card" data-reveal>
+              <div class="contact-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h4>Adresse</h4>
+              <p>12, avenue des Fleurs</p>
+              <p>06000 Nice, France</p>
+            </div>
+
+            <!-- Hours -->
+            <div class="contact-card" data-reveal>
+              <div class="contact-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h4>Horaires</h4>
+              <p>Lundi — Vendredi&nbsp;: 9h00 — 19h00</p>
+              <p>Samedi&nbsp;: 10h00 — 12h30 / 14h00 — 18h00</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Agency Locations -->
+    <section class="section section--darker">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="label">NOS AGENCES</span>
+          <h2>Trois adresses de prestige</h2>
+        </div>
+
+        <div class="grid grid--3">
+
+          <!-- Agency 1 -->
+          <div class="agency-card" data-reveal>
+            <div class="agency-card__image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=400&fit=crop&q=80" alt="Agence Orpi Luxe Nice Carré d'Or">
+            </div>
+            <div class="agency-card__body">
+              <h4>Nice Carré d'Or</h4>
+              <p class="agency-card__subtitle">Au c&oelig;ur du quartier le plus prestigieux de Nice</p>
+              <div class="agency-card__info">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  12, avenue des Fleurs, 06000 Nice
+                </span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  04&nbsp;93&nbsp;00&nbsp;00&nbsp;00
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agency 2 -->
+          <div class="agency-card" data-reveal>
+            <div class="agency-card__image">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=400&fit=crop&q=80" alt="Agence Orpi Luxe Cannes Croisette">
+            </div>
+            <div class="agency-card__body">
+              <h4>Cannes Croisette</h4>
+              <p class="agency-card__subtitle">Face au Palais des Festivals</p>
+              <div class="agency-card__info">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  45, boulevard de la Croisette, 06400 Cannes
+                </span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  04&nbsp;93&nbsp;00&nbsp;00&nbsp;01
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agency 3 -->
+          <div class="agency-card" data-reveal>
+            <div class="agency-card__image">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=400&fit=crop&q=80" alt="Agence Orpi Luxe Villefranche-sur-Mer">
+            </div>
+            <div class="agency-card__body">
+              <h4>Villefranche-sur-Mer</h4>
+              <p class="agency-card__subtitle">Spécialiste du marché bord de mer</p>
+              <div class="agency-card__info">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  8, quai de l'Amiral Courbet, 06230 Villefranche-sur-Mer
+                </span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  04&nbsp;93&nbsp;00&nbsp;00&nbsp;02
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Map Section -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="map-placeholder" data-reveal>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46239.83203496808!2d7.2291163!3d43.7101728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd0106a852d31%3A0x40819a5fd979a70!2sNice!5e0!3m2!1sfr!2sfr!4v1" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Carte Google Maps — Nice, France"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <img src="assets/images/orpi_logo_C6A962_transparent.png" alt="Orpi Biens d'Exception" class="footer-logo-img">
+          </a>
+          <p>Votre partenaire de confiance pour l'immobilier de prestige sur la Côte d'Azur. Expertise, discrétion et excellence depuis plus de 25&nbsp;ans.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="acheter.html">Nos Biens</a></li>
+            <li><a href="vendre.html">Vendre</a></li>
+            <li><a href="gestion-locative.html">Gestion</a></li>
+            <li><a href="le-groupe.html">Le Groupe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="acheter.html">Achat de prestige</a></li>
+            <li><a href="vendre.html">Vente de prestige</a></li>
+            <li><a href="gestion-locative.html">Gestion locative</a></li>
+            <li><a href="vendre.html#estimation">Estimation gratuite</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Contact</h4>
+          <ul>
+            <li>12, avenue des Fleurs</li>
+            <li>06000 Nice, France</li>
+            <li><a href="tel:+33493000000">04&nbsp;93&nbsp;00&nbsp;00&nbsp;00</a></li>
+            <li><a href="mailto:contact@orpi-luxe.fr">contact@orpi-luxe.fr</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Orpi Luxe. Tous droits réservés.</p>
+        <div class="footer__bottom-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="mentions-legales.html">Politique de confidentialité</a>
+          <a href="mentions-legales.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
